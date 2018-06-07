@@ -15,14 +15,18 @@ const loadQuestion = ()=>{ // Charge chaque questions de la FAQ et leur assigne 
 };
 
 const showContent = (event) => { // Masque les paragraphes ouverts et affiche le paragraph demandé
+    let element = event.target;
+    let paragraph = element.parentNode.querySelector('p');
+    const paragraphHeight = paragraph.style.height;
+
     let paragraphs = document.querySelectorAll(".question>p");
-    for(let paragraph of paragraphs){
-        if(paragraph.style.height == "auto"){
-            paragraph.style.height = "0";
+    for(let currentParagraph of paragraphs){
+        if(currentParagraph.style.height == "auto"){
+            currentParagraph.style.height = "0";
         }
     }
 
-    let element = event.target;
-    let paragraph = element.parentNode.querySelector('p');
-    paragraph.style.height = "auto";
+    if(paragraphHeight != "auto"){
+        paragraph.style.height = "auto";
+    }
 };
