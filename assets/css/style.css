@@ -1,6 +1,43 @@
+*{
+    color: #251979;
+}
+
+#faq{
+    position: relative;
+}
+.question h3{
+    cursor: pointer;
+}
 .question p{
     height: 0;
     overflow: hidden;
-
     transition: height 0.5s;
+}
+/* .question:hover > p{
+    height: auto;
+} */
+.icon{
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+#contact label{
+    display: block;
+}
+#contact p > label{
+    display: inline-block;
+}
+
+input[type=submit]{
+    width: 100%;
+    color: white;
+    background-color: #ec5435;
+}
+textarea{
+    width: 100%;
 }

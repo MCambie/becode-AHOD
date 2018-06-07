@@ -25,4 +25,4 @@ const showContent = (event) => { // Masque les paragraphes ouverts et affiche le
     let element = event.target;
     let paragraph = element.parentNode.querySelector('p');
     paragraph.style.height = "auto";
-}
+};
