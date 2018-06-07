@@ -3,8 +3,8 @@
 - **Client** : Repair Café Scharbeek 
 - **Where ?** : At [Becode](https://github.com/becodeorg/)
 - **When ?** :  07/06/2018
-- **By who ?** : [Steve Van Esseche](), [Marie Cambie]() & [Pedro Seromenho](https://github.com/pedroseromenho/)
-- **The Website** : [HERE]() - *v1*.
+- **By who ?** : [Steve Van Esseche](https://github.com/Steve-VE), [Marie Cambie](https://github.com/mcambie) & [Pedro Seromenho](https://github.com/pedroseromenho/)
+- **The Website** : [HERE](https://steve-ve.github.io/becode-AHOD/) - *v1*.
 
 ## About
 
