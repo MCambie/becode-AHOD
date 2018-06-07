@@ -25,7 +25,7 @@ Nous avons reçu un projet (un site inexistant ou existant mais pas terrible ter
 - Si possible, trouver un nom de domaine gratuit
 - Publier le résultat sur ce [formulaire](https://goo.gl/forms/Z544Q93eqeNdfZHI3) avant la fin de la deadline.
 
-### Méthodes de travail
+## Méthodes de travail
 
 1. Faire connaissance;
 2. Créer un répo, et des branches pour chacun;
