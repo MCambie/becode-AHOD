@@ -49,13 +49,16 @@ Nous avons reçu un projet (un site inexistant ou existant mais pas terrible ter
 
 ![lighthouse](lighthouse.png)
 
+
 #### Test W3
 
 ![w3](w3.png)
 
+
 #### Le Mockup
 
 [HERE PDF](mockup.pdf)
+
 
 #### Difficultés rencontrées
 
