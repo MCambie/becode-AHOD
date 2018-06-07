@@ -1,0 +1,17 @@
+{
+  "name": "Repair_Cafe",
+  "short_name": "RP",
+  "icons": [{
+      "src": "Assets/img/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }, {
+      "src": "Assets/img/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpg"
+    }],
+    "start_url": "/index.html",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "theme_color": "#FFFFFF"
+}
