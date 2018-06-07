@@ -1,10 +1,74 @@
 *{
+    color: #251979;
     padding: 0;
     margin: 0;
 }
 
+html{
+    overflow-x: hidden;
+}
+
+@media screen and (min-width: 1281px){
+    body{
+        font-size: 2em;
+    }
+}
+
+#faq{
+    position: relative;
+}
+.question h3{
+    cursor: pointer;
+}
+.question p{
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+/* .question:hover > p{
+    height: auto;
+} */
+.icon{
+    position: absolute;
+    width: 25%;
+    height: auto;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+
+#contact label{
+    display: block;
+}
+#contact p > label{
+    display: inline-block;
+}
+
+input[type=submit]{
+    width: 100%;
+    color: white;
+    background-color: #ec5435;
+}
+textarea{
+    width: 100%;
+}
+
+main{
+    margin-top: 150px;
+}
 section#show img{
     width: 100%;
+}
+#show{
+    height: 50vh;
+    background-image: url('../img/1.jpg');
+    background-size: cover;
+    background-position-y: center;
+}
+#show>div{
+    width: 200px;
+    margin: 0 auto;
 }
 
 a.soutenir{
@@ -23,16 +87,6 @@ a.soutenir{
     /* box-shadow: 1px 2px rgba(0, 0, 0, 0.5);; */
 }
 
-section#about h2{
-    height: 50px;
-    background-color: #ec5435;
-    font-family: salsa;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    line-height: 50px;
-}
-
 section#about p{
     color: #251979;
 }    
@@ -42,8 +96,7 @@ section#about i{
     text-align: center;
 } 
 
-section#news h2{
-    height: 50px;
+h2{
     background-color: #ec5435;
     font-family: salsa;
     color: white;
@@ -68,4 +121,30 @@ section#news h2{
 .date{
     color: #251979;
     font-weight: 600;
+}
+
+header .container-fluid{
+    background-color: white;
+}
+.header-top {
+  background-color: #FFFFFF;
+  color: #251979;
+  font-family: salsa;
+}
+
+.container-fluid{
+  padding: 0!important;
+}
+
+.navbar-collapse {
+  background-color: #251979;
+}
+
+.nav.navbar-nav.navbar-right{
+  padding-right: 10px;
+}
+
+.page-footer{
+  background-color: #251979;
+  color:#FFFFFF;
 }
