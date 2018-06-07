@@ -1,0 +1,23 @@
+
+.header-top {
+  background-color: #FFFFFF;
+  color: #251979;
+  font-family: salsa;
+}
+
+.container-fluid{
+  padding: 0!important;
+}
+
+.navbar-collapse {
+  background-color: #251979;
+}
+
+.nav.navbar-nav.navbar-right{
+  padding-right: 10px;
+}
+
+.page-footer{
+  background-color: #251979;
+  color:#FFFFFF;
+}
