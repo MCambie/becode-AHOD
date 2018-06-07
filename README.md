@@ -24,8 +24,26 @@ Nous avons reçu un projet (un site inexistant ou existant mais pas terrible ter
 - Essayer d'en faire une Progressive Web App ([guide](https://dev.to/pixeline/the-easy-way-to-turn-a-website-into-a-progressive-web-app-77g))
 - Si possible, trouver un nom de domaine gratuit
 - Publier le résultat sur ce [formulaire](https://goo.gl/forms/Z544Q93eqeNdfZHI3) avant la fin de la deadline.
+<<<<<<< HEAD
+=======
 
-#### Méthodes de travail
+## Méthodes de travail
+>>>>>>> 6f610e71b4dd61ef2058e9b4261ef1b27c2936b1
+
+1. Faire connaissance;
+2. Créer un répo, et des branches pour chacun;
+3. Décortiquer la demande, en ciblant les mots clés;
+4. Réaliser une maquette de structure, ensemble;
+5. Repartition des taches:
+    - Steve construit l'archictecture `html`;
+    - Marie et Pedro ameillorent la maquette, en travaillant le layout, les couleurs et la typo.
+6. Repartion des differentes sections `html`, pour réaliser le `css`;
+7. Merger les branches et résoudre les conflits.
+8. Repartition des taches:
+    - Steve corrige les problèmes css;
+    - Marie s'occupe de PWA;
+    - Pedro test le site sur lighthouse, et rédige la première version du `README.md`
+9. Envoi du résultat au jury.    
 
 1. Faire connaissance;
 2. Créer un répo, et des branches pour chacun;
@@ -49,14 +67,23 @@ Nous avons reçu un projet (un site inexistant ou existant mais pas terrible ter
 
 ![lighthouse](lighthouse.png)
 
+<<<<<<< HEAD
 #### Test W3
 
 ![w3](w3.png)
+=======
+
+#### Test W3
+
+![w3](w3.png)
+
+>>>>>>> 6f610e71b4dd61ef2058e9b4261ef1b27c2936b1
 
 #### Le Mockup
 
 [HERE PDF](mockup.pdf)
 
+<<<<<<< HEAD
 #### Difficultés rencontrées
 
 L'utilisation obligatoire d'un framework css était sensé nous faciliter la vie, nous avons opté par l'utilisation de bootstrap. Cependant, ça nous a pas forcement aidé, car beaucoup nous avons passé beaucoup de temps à craquer le pluggin pour obtenir un résultat conforme avec la maquette.
@@ -65,3 +92,9 @@ L'utilisation obligatoire d'un framework css était sensé nous faciliter la vie
 
 
 
+=======
+
+#### Difficultés rencontrées
+
+L'utilisation obligatoire d'un framework css était sensé nous faciliter la vie, nous avons opté par l'utilisation de bootstrap. Cependant, ça nous a pas forcement aidé, car beaucoup nous avons passé beaucoup de temps à craquer le pluggin pour obtenir un résultat conforme avec la maquette.
+>>>>>>> 6f610e71b4dd61ef2058e9b4261ef1b27c2936b1
