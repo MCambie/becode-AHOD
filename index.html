@@ -7,40 +7,52 @@
     <title>Repair Café Schaerbeek</title>
     <link href="https://fonts.googleapis.com/css?family=Salsa" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/bootstrap-grid.css">
-    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <div>
-                <h1>
-                    Repair Café Schaerbeek
-                </h1>
-                <p class="adress">307 rue des Coteaux, 1030 Schaerbeek</p>
-            </div>
-            <div>
-                <ul>
-                    <li>NL</li>
-                    <li>EN</li>
-                </ul>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#news">News</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+  <header>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="header-top">
+                  <h1>
+                      Repair Café Schaerbeek
+                  </h1>
+                  <p class="adress">307 rue des Coteaux, 1030 Schaerbeek</p>
+              </div>
+              <div>
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#">FR</a></li>
+                      <li><a href="#">NL</a></li>
+                      <li><a href="#">EN</a></li>
+                  </ul>
+              </div>
+              <div class="navbar-header">
+                  <button type="roll-menu" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" name="roll-menu">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                      <li><a href="#about">À propos</a></li>
+                      <li><a href="#faq">FAQ</a></li>
+                      <li><a href="#news">News</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
         <main>
             <section id="show">
             </section>
             <section id="about">
                 <h2>À Propos</h2>
-                
+
             </section>
             <section id="faq" class="container-fluid row">
                 <h2 class="col-12">FAQ</h2>
@@ -175,11 +187,21 @@
                 </form>
             </section>
         </main>
-        <footer>
-            <p>
-                307 rue des Coteaux, 1030 Schaerbeek
-            </p>
-            <a href="https://www.facebook.com/RepairCafeBrussels/">facebook</a>
+        <footer class="page-footer font-small">
+            <div class="container-fluid text-left">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>
+                      307 rue des Coteaux, 1030 Schaerbeek
+                  </p>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-md-2">
+                  <a href="https://www.facebook.com/RepairCafeBrussels/">facebook</a>
+                </div>
+              </div>
+
+          </div>
         </footer>
     </div>
 
