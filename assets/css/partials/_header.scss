@@ -1,0 +1,16 @@
+header .container-fluid{
+    background-color: $brand-color-white;
+}
+.header-top {
+    color: $brand-color-blue;
+    font-family: salsa;
+}
+
+
+.navbar-collapse {
+    background-color: $brand-color-blue;
+}
+
+.nav.navbar-nav.navbar-right{
+    padding-right: 10px;
+}

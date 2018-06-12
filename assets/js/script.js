@@ -5,7 +5,6 @@ window.onload = () =>{
     loadQuestion();
 };
 
-// Déclaration de nos fonctions ici (par exemple)
 
 const loadQuestion = ()=>{ // Charge chaque questions de la FAQ et leur assigne un event click pour faire apparaitre leur contenu
     let questions = document.querySelectorAll(".question");
@@ -25,7 +24,7 @@ const showContent = (event) => { // Masque les paragraphes ouverts et affiche le
             currentParagraph.style.height = "0";
         }
     }
-
+    
     if(paragraphHeight != "auto"){
         paragraph.style.height = "auto";
     }

@@ -1,0 +1,25 @@
+#faq{
+    position: relative;
+    
+    .question{
+        h3{
+            cursor: pointer;
+        }
+        p{
+            height: 0;
+            overflow: hidden;
+        }
+    }
+
+    .icon{
+        position: absolute;
+        width: 25%;
+        height: auto;
+        
+        top: 50%;
+        right: 0;
+        transform: translateX(-50%) translateY(-50%);
+        
+        opacity: 0.5;
+    }
+}

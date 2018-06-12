@@ -1,188 +1,189 @@
-*{
-    color: #251979;
-    padding: 0;
-    margin: 0;
+* {
+  color: #251979;
+  padding: 0;
+  margin: 0;
 }
 
-html{
-    overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 
-@media screen and (min-width: 1281px){
-    body{
-        font-size: 2em;
-    }
+@media screen and (min-width: 1281px) {
+  body {
+    font-size: 2em;
+  }
 }
 
-#about p, #news p{
-    text-align: justify;
-}
-#about i{
-    display: block;
-    margin: 0 auto;
-    transform: translateY(50%);
+main {
+  margin-top: 150px;
 }
 
-.content{
-    padding: 0 20px;
+#about p, #news p {
+  text-align: justify;
 }
 
-#faq{
-    position: relative;
-}
-.question h3{
-    cursor: pointer;
-}
-.question p{
-    height: 0;
-    overflow: hidden;
-    transition: height 0.5s;
-}
-/* .question:hover > p{
-    height: auto;
-} */
-.icon{
-    position: absolute;
-    width: 25%;
-    height: auto;
-    top: 50%;
-    right: 0;
-    transform: translateX(-50%) translateY(-50%);
-
-    opacity: 0.5;
+.content {
+  padding: 0 20px;
 }
 
-
-#contact label{
-    display: block;
-    margin: 12px 0;
-}
-#contact label > input[type=text], #contact label > input[type=email]{
-    float: right;
-    width: 66%;
-}
-#contact p > label{
-    display: inline-block;
-    cursor: pointer;
+h2 {
+  background-color: #ec5435;
+  font-family: salsa;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 52px;
 }
 
-input[type=radio]{
-    margin: 0 12px;
-}
-input[type=submit]{
-    width: 100%;
-    color: white;
-    background-color: #ec5435;
-}
-textarea{
-    width: 100%;
-    min-height: 150px;
-    resize: vertical;
-}
-#contact form{
-    margin-bottom: 12px;
+.container {
+  max-width: 1280px;
 }
 
-main{
-    margin-top: 150px;
-}
-section#show img{
-    width: 100%;
-}
-#show{
-    height: 50vh;
-    background-image: url('../img/1.jpg');
-    background-size: cover;
-    background-position-y: center;
-}
-#show>div{
-    width: 200px;
-    margin: 0 auto;
+.date {
+  color: #251979;
+  font-weight: 600;
 }
 
-a.soutenir{
-    position: absolute;
-    margin: 0 auto;
-    top: 50%;
-    width: 300px;
-    background-color: #ec5435;
-    color: white;
-    height: 50px;
-    text-align: center;
-    font-size: 30px;
-    font-family: salsa;
-    border-radius: 30px;
-    line-height: 50px;
-    /* box-shadow: 1px 2px rgba(0, 0, 0, 0.5);; */
+.container-fluid {
+  padding: 0 !important;
 }
 
-section#about p{
-    color: #251979;
-}    
-
-section#about i{
-    color: #251979;
-    text-align: center;
-} 
-
-h2{
-    background-color: #ec5435;
-    font-family: salsa;
-    color: white;
-    text-align: center;
-    font-size: 30px;
-    line-height: 52px;
+.text-right {
+  text-align: right;
 }
 
-.container{
-    max-width: 1280px;
-}
-.new img {
-    width: 100%;
+header .container-fluid {
+  background-color: white;
 }
 
-.new h3{
-    font-family: salsa; 
-    color: #251979;
-}
-
-.new p{
-    color: #251979;
-}    
-
-.date{
-    color: #251979;
-    font-weight: 600;
-}
-
-header .container-fluid{
-    background-color: white;
-}
 .header-top {
-  background-color: #FFFFFF;
   color: #251979;
   font-family: salsa;
-}
-
-.container-fluid{
-  padding: 0!important;
 }
 
 .navbar-collapse {
   background-color: #251979;
 }
 
-.nav.navbar-nav.navbar-right{
+.nav.navbar-nav.navbar-right {
   padding-right: 10px;
 }
 
-footer{
-    background-color: #251979;
-}
-.page-footer p, .page-footer a{
-  color:#FFFFFF;
+#about {
+  color: #251979;
 }
 
-.text-right{
-    text-align: right;
+#about i {
+  display: block;
+  text-align: center;
+  transform: translateY(50%);
 }
+
+#contact form {
+  margin-bottom: 12px;
+}
+
+#contact label {
+  display: block;
+  margin: 12px 0;
+}
+
+#contact label > input[type=text], #contact label > input[type=email] {
+  float: right;
+  width: 66%;
+}
+
+#contact p > label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#contact input[type=radio] {
+  margin: 0 12px;
+}
+
+#contact input[type=submit] {
+  width: 100%;
+  color: white;
+  background-color: #ec5435;
+}
+
+#contact textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+  padding: 8px;
+}
+
+#faq {
+  position: relative;
+}
+
+#faq .question h3 {
+  cursor: pointer;
+}
+
+#faq .question p {
+  height: 0;
+  overflow: hidden;
+}
+
+#faq .icon {
+  position: absolute;
+  width: 25%;
+  height: auto;
+  top: 50%;
+  right: 0;
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 0.5;
+}
+
+.new img {
+  width: 100%;
+}
+
+.new h3 {
+  font-family: salsa;
+  color: #251979;
+}
+
+.new p {
+  color: #251979;
+}
+
+#show {
+  height: 50vh;
+  background-image: url("../img/1.jpg");
+  background-size: cover;
+  background-position-y: center;
+}
+
+#show > div {
+  width: 200px;
+  margin: 0 auto;
+}
+
+#show a.soutenir {
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+  top: 50%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: salsa;
+  line-height: 50px;
+  background-color: #ec5435;
+  border-radius: 30px;
+  /* box-shadow: 1px 2px rgba(0, 0, 0, 0.5);; */
+}
+
+footer {
+  background-color: #251979;
+}
+
+footer p, footer a {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
