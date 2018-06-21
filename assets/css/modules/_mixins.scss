@@ -1,0 +1,5 @@
+@mixin main-container {
+    max-width: $max-width;
+    padding-left: $padding-default-value;
+    padding-right: $padding-default-value;
+}
