@@ -14,64 +14,73 @@
 
 </head>
 <body>
+    <nav>
+        
+    </nav>
     <header>
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="header-top content">
-                    <h1>
-                        Repair Café Schaerbeek
-                    </h1>
-                    <p class="adress">307 rue des Coteaux, 1030 Schaerbeek</p>
-                </div>
-                <div>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">FR</a></li>
-                        <li><a href="#">NL</a></li>
-                        <li><a href="#">EN</a></li>
-                    </ul>
-                </div>
-                <div class="navbar-header">
-                    <button type="roll-menu" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" name="roll-menu">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#about">À propos</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#news">News</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
+        <h1>
+            <strong>Repair Café</strong> Schaerbeek
+        </h1>
+        <nav>
+            <a href="#about">À propos</a>
+            <a href="#faq">FAQ</a>
+            <a href="#news">Actu</a>
+            <a href="#contact">Contact</a>
         </nav>
+        <select name="lang" id="lang">
+            <option value="fr">fr</option>
+            <option value="en">en</option>
+            <option value="nl">nl</option>
+        </select>
     </header>
     <main>
-        <section id="show" class="col-md-12">
+        <section id="disclaimer">
             <div>
-                <a href="#" target="_blank" class="soutenir">Nous Soutenir</a>
+                <p>Jeter? Pas question!</p>
+                <p>
+                    Réparer ensemble, c'est l'idée des <a href="http://www.repairtogether.be/">Repair Cafés</a> dont l'entrée est ouverte à tous.
+                </p>
+                <p>
+                    Prochaine session: Dimanche 8 juillet dés 14h<br>
+                    307, rue des Coteaux 1030 Schaerbeek
+                </p>
+            </div>
+            <div>
+                <button>Inscrivez-vous</button>
             </div>
         </section>
-        <section id="about" class="container-fluid">
+        <section id="about">
             <h2>À Propos</h2>
-            <div class="content">
-                <div class="col-md-6">
-                    <i class="fas fa-hands-helping fa-10x"></i>
-                </div>
-                <div class="col-md-6">
+            <div>
+                <div>
                     <p>
-                        Réparer ensemble, c’est l’idée des <b>Repair Cafés</b> dont l’entrée est ouverte à tous. Outils et matériel sont disponibles à l’endroit où est organisé le Repair Café, pour faire toutes les <b>réparations</b> possibles et imaginables. <b>Vêtements</b>, <b>meubles</b>, <b>appareils électriques</b>, <b>bicyclettes</b>, <b>vaisselle</b>, <b>objets utiles</b>, <b>jouets</b>, et autres. D’autre part sont présents dans le Repair Café des experts bénévoles, qui ont une connaissance et une compétence de la réparation dans toutes sortes de domaines.
-                        On y apporte des objets en mauvais état qu’on a chez soi. Et on se met à l’ouvrage avec les gens du métier. Il y a toujours quelque chose à apprendre au Repair Café. Ceux qui n’ont rien à réparer prennent un café ou un thé, ou aident à réparer un objet appartenant à un autre. On peut aussi toujours y trouver des idées à la table de lecture qui propose des ouvrages sur la réparation et le <b>bricolage</b>.
-                        Il y a des centaines de Repair Cafés partout en Belgique, en France et en Suisse. Vous pouvez visiter un Repair Café près de chez vous, ou pourquoi pas, en organiser un vous-même ! Lisez aussi les règles internes du Repair Café.
+                        Outils et matériel sont disponibles à l’endroit où est organisé le Repair
+                        Café, pour faire toutes les <b>réparations</b> possibles et imaginables. Vêtements,
+                        meubles, appareils électriques, bicyclettes, vaisselle, objets utiles, jouets, et
+                        autres. D’autre part sont présents dans le Repair Café des experts bénévoles,
+                        qui ont une <b>connaissance</b> et une compétence de la réparation dans toutes
+                        sortes de domaines.
+                    </p>
+                    <p>
+                        On y apporte des objets en mauvais état qu’on a chez soi. Et on se met à
+                        l’ouvrage avec les gens du métier. Il y a toujours quelque chose à <b>apprendre</b>
+                        au Repair Café. Ceux qui n’ont rien à réparer prennent un café ou un thé, ou
+                        aident à réparer un objet appartenant à un autre. On peut aussi toujours
+                        y trouver des idées à la table de lecture qui propose des ouvrages sur la
+                        réparation et le <b>bricolage</b>.
+                    </p>
+                    <p>
+                        Il y a des centaines de <a href="http://www.repairtogether.be/">Repair Cafés</a> partout en Belgique, en France et en
+                        Suisse. Vous pouvez visiter un Repair Café près de chez vous, ou pourquoi
+                        pas, en organiser un vous-même ! Lisez aussi les <a href="">règles internes</a> du Repair
+                        Café.
                     </p>
                 </div>
+                <img src="" alt="">
             </div>
         </section>
-        <section id="faq" class="container-fluid row">
-            <h2 class="col-12">FAQ</h2>
-
+        <section id="faq">
+            <h2>FAQ</h2>
             <div class="content">
                 <div class="question col-12 col-md-8">
                     <h3>Qu'est-ce qu'un Repair Café ? Qui êtes-vous ?</h3>
@@ -146,82 +155,70 @@
                     </p>
                 </div>
             </div>
-
-            <div class="icon">
-                <img src='./assets/img/question-circle.svg' alt="question-circle">
-            </div>
         </section>
         <section id="news">
-            <h2>News</h2>
-            <div class="content row">
-                <div class="new col-sm-6 col-md-3">
-                    <div class="date">06/06/2018</div>
-                    <img src="assets/img/2.jpg" alt="">
-                    <h3>Titre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil amet, laborum odio cupiditate laudantium ullam vero quam officiis sit aut rerum quod ab architecto temporibus nisi sunt perspiciatis consequatur molestias!</p>
+            <h2>Actus</h2>
+            <div class="content">
+                <div class="article">
+                    <div class="preview">
+                        <p>En septembre et octobre, ce ne sont pas moins de 95 objets qui ont été amenés au Repair Café Schaerbeek et comme toujours environ 70% d'entre eux repartent réparés [...]</p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="date">Publié le 26 avril 2018 à 09h08</div>
+                    <h3>Ça ne chôme pas au Repair Café!</h3>
                 </div>
-                <div class="new col-sm-6 col-md-3">
-                    <div class="date">06/06/2018</div>
-                    <img src="assets/img/3.jpg" alt="">
-                    <h3>Titre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil amet, laborum odio cupiditate laudantium ullam vero quam officiis sit aut rerum quod ab architecto temporibus nisi sunt perspiciatis consequatur molestias!</p>
+                <div class="article">
+                    <div class="preview">
+                        <p>En septembre et octobre, ce ne sont pas moins de 95 objets qui ont été amenés au Repair Café Schaerbeek et comme toujours environ 70% d'entre eux repartent réparés [...]</p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="date">Publié le 26 avril 2018 à 09h08</div>
+                    <h3>Initiation aux logiciels libres</h3>
                 </div>
-                <div class="new col-sm-6 col-md-3">
-                    <div class="date">06/06/2018</div>
-                    <img src="assets/img/4.jpg" alt="">
-                    <h3>Titre</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil amet, laborum odio cupiditate laudantium ullam vero quam officiis sit aut rerum quod ab architecto temporibus nisi sunt perspiciatis consequatur molestias!</p>
-                </div>
-                <div class="new col-sm-6 col-md-3">
-                        <div class="date">06/06/2018</div>
-                        <img src="assets/img/5.jpg" alt="">
-                        <h3>Titre</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil amet, laborum odio cupiditate laudantium ullam vero quam officiis sit aut rerum quod ab architecto temporibus nisi sunt perspiciatis consequatur molestias!</p>
+                <div class="article">
+                    <div class="preview">
+                        <p>En septembre et octobre, ce ne sont pas moins de 95 objets qui ont été amenés au Repair Café Schaerbeek et comme toujours environ 70% d'entre eux repartent réparés [...]</p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="date">Publié le 26 avril 2018 à 09h08</div>
+                    <h3>Le printemps s'invite au Repair Café de Schaerbeek</h3>
                 </div>
             </div>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form action="" class="content row">
-                <div class="col-md-6">
-                    <label class="row">
-                        <span class="col-4">Nom</span>
-                        <input class="col-8" type="text">
-                    </label>
-                    <label class="row">
-                        <span class="col-4">Prénom</span>
-                        <input class="col-8" type="text">
-                    </label>
-                    <label class="row">
-                        <span class="col-4">Email</span>
-                        <input class="col-8" type="email">
-                    </label>
-                    <p class="col-12">
-                        Je vous contacte car je souhaite 
-                        <label><input type="radio" name="subject">être bénévole</label>
-                        <label><input type="radio" name="subject">faire réparer un objet</label>
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <label for="contact-message">Message</label>
-                    <textarea name="message" id="contact-message"></textarea>
-                    <input type="submit" value="Envoyer" class="btn">
-                </div>
-            </form>
         </section>
     </main>
-    <footer class="page-footer font-small">
-        <div class="container-fluid text-left">
-            <div class="row content">
-                <div class="col-md-6">
-                    <p>
-                        307 rue des Coteaux, 1030 Schaerbeek
-                    </p>
-                </div>
-                <div class="col-md-2 text-right pull-right">
-                    <a href="https://www.facebook.com/RepairCafeBrussels/">facebook</a>
-                </div>
-            </div>
+    <footer>
+        <div>
+            <form>
+                <span>Je souhaite :</span>
+                <label>
+                    <input type="radio" name="want-to-be">Être bénévole
+                </label>
+                <label>
+                    <input type="radio" name="want-to-be">Réparer un objet
+                </label>
+                <label for="lastname">Nom</label>
+                <input type="text" name="lastname">
+                <label for="lastname">Prénom</label>
+                <input type="text" name="firstname">
+                <label for="lastname">E-mail</label>
+                <input type="email" name="email">
+                <label for="date">Dates disponibles</label>
+                <select name="date">
+                    <option value="08-07-2018">8 juillet 2018</option>
+                </select>
+                <input type="submit" value="Inscription">
+            </form>
+        </div>
+        <div>
+            <p>
+                Si vous avez une question, peut-être trouverez-vous la réponse sur la page des <a href="#faq">FAQ</a>.
+                Dans le cas contraire, vous pouvez nous contacter par e-mail:
+            </p>
+            <p>
+                <a href="mailto:repaircafe.schaerbeek@gmail.com">repaircafe.schaerbeek@gmail.com</a>
+            </p>
+            <img src="" alt="Repair Café logo">
+            <img src="" alt="Fondation Roi Baudouin">
         </div>
     </footer>
 </div>
