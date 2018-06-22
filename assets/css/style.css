@@ -1,5 +1,5 @@
 * {
-  color: #2b4fb2;
+  color: #000;
   padding: 0;
   margin: 0;
 }
@@ -8,35 +8,72 @@ html {
   overflow-x: hidden;
 }
 
-@media screen and (min-width: 1281px) {
-  body {
-    font-size: 2em;
-  }
+body{
+  background-color: #f2f2f2;
+}
+
+header{
+  height: 0px;
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
-#about p, #news p {
-  text-align: justify;
+section#disclaimer{
+  background-color: #2b4fb2;
+  height: 400px;
+}
+
+#about h2{
+  color: #2b4fb2;
+  font-weight: bold;
+}
+
+#about p{
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+#about .row{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+#about img{
+  margin-top: 50%;
+}
+
+#about a{
+  color: #f86f61;
+  border-bottom: 2px solid;
+}
+
+#about a.video{
+  display: inline-block;
+  padding-top: 10px;
+  font-size: 10px;
+  opacity: 0.5;
+  color: #f86f61;
+  border-bottom: 1px solid;
+}
+
+#about a.video:hover{
+  text-decoration: none;
+  opacity: 1;
 }
 
 .content {
   padding: 0 20px;
 }
 
-h2 {
-  background-color: #f86f61;
-  font-family: salsa;
-  color: #ffffff;
-  text-align: center;
-  font-size: 30px;
-  line-height: 52px;
+.container {
+  max-width: 1160px;
+  background-color: #ffffff;
 }
 
-.container {
-  max-width: 1280px;
+#faq{
+  top: 200px;
 }
 
 .date {
@@ -58,7 +95,6 @@ header .container-fluid {
 
 .header-top {
   color: #2b4fb2;
-  font-family: salsa;
 }
 
 .navbar-collapse {
@@ -71,12 +107,6 @@ header .container-fluid {
 
 #about {
   color: #2b4fb2;
-}
-
-#about i {
-  display: block;
-  text-align: center;
-  transform: translateY(50%);
 }
 
 #contact form {
@@ -128,55 +158,11 @@ header .container-fluid {
   overflow: hidden;
 }
 
-#faq .icon {
-  position: absolute;
-  width: 25%;
-  height: auto;
-  top: 50%;
-  right: 0;
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 0.5;
-}
-
-.new img {
-  width: 100%;
-}
-
-.new h3 {
-  font-family: salsa;
-  color: #2b4fb2;
-}
-
-.new p {
-  color: #2b4fb2;
-}
-
 #show {
   height: 50vh;
   background-image: url("../img/1.jpg");
   background-size: cover;
   background-position-y: center;
-}
-
-#show > div {
-  width: 200px;
-  margin: 0 auto;
-}
-
-#show a.soutenir {
-  position: absolute;
-  width: 300px;
-  height: 50px;
-  margin: 0 auto;
-  top: 50%;
-  color: #ffffff;
-  text-align: center;
-  font-size: 30px;
-  font-family: salsa;
-  line-height: 50px;
-  background-color: #f86f61;
-  border-radius: 30px;
-  /* box-shadow: 1px 2px rgba(0, 0, 0, 0.5);; */
 }
 
 footer {
@@ -186,4 +172,9 @@ footer {
 footer p, footer a {
   color: #ffffff;
 }
-/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 1281px) {
+  body {
+    font-size: 2em;
+  }
+}
