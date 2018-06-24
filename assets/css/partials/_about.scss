@@ -1,0 +1,37 @@
+#about {
+    color: $brand-color-blue;
+    
+    h2{
+        color: $brand-color-blue;
+        font-weight: bold;
+    }
+    p{
+         padding-top: 10px;
+         font-size: 20px;
+    }
+    .row{
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+    
+    img{
+        margin-top: 50%;
+    }
+    
+    a{
+        color: $brand-color-orange;
+        border-bottom: 2px solid;
+        &.video{
+            display: inline-block;
+            padding-top: 10px;
+            font-size: 10px;
+            opacity: 0.5;
+            color: $brand-color-orange;
+            border-bottom: 1px solid;
+            &:hover{
+                text-decoration: none;
+                opacity: 1;
+            }
+        }
+    }
+}

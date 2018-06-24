@@ -1,0 +1,14 @@
+#faq{
+    margin-top: $space-between-section;
+    position: relative;
+    .question{
+        h3{ cursor: pointer; }
+    
+        p{
+            height: 0;
+            overflow: hidden;
+        }
+    }
+}
+  
+  
