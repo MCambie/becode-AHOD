@@ -1,8 +1,8 @@
 *{
-    color: $brand-color-black;
-    font-family: $font-content;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    font-family: $font-content;
+    color: $brand-color-black;
 }
 
 html {
@@ -26,13 +26,26 @@ main {
     margin-top: 100px;
 }
 
+
+.bigger{
+    font-size: 2em;
+}
+
 .content {
     padding: 0 20px;
 }
-  
+
 .container {
     max-width: 1160px;
-    background-color: $brand-color-white;
+    &.bc-white{
+        background-color: $brand-color-white;
+    }
+}
+
+.center-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .date {
@@ -44,6 +57,18 @@ main {
     padding: 0 !important;
 }
 
+.space-after{
+    margin-bottom: 50px;
+}
+
 .text-right {
     text-align: right;
+}
+
+.video{
+    &::before{
+        content: "→ ";
+        display: inline-block;
+        color: red;
+    }
 }

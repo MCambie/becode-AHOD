@@ -1,8 +1,9 @@
+@charset "UTF-8";
 * {
-  color: #000000;
-  font-family: "Rubik", sans-serif;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  color: #000000;
 }
 
 html {
@@ -28,13 +29,26 @@ main {
   margin-top: 100px;
 }
 
+.bigger {
+  font-size: 2em;
+}
+
 .content {
   padding: 0 20px;
 }
 
 .container {
   max-width: 1160px;
+}
+
+.container.bc-white {
   background-color: #ffffff;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .date {
@@ -46,8 +60,18 @@ main {
   padding: 0 !important;
 }
 
+.space-after {
+  margin-bottom: 50px;
+}
+
 .text-right {
   text-align: right;
+}
+
+.video::before {
+  content: "→ ";
+  display: inline-block;
+  color: red;
 }
 
 #about {
@@ -129,8 +153,30 @@ main {
 }
 
 #disclaimer {
+  padding: 80px 0 !important;
   background-color: #2b4fb2;
-  height: 400px;
+}
+
+#disclaimer p {
+  color: #ffffff;
+}
+
+#disclaimer a {
+  color: #ffffff;
+  border-bottom: 1px solid white;
+}
+
+#disclaimer a:hover {
+  text-decoration: none;
+}
+
+#disclaimer .btn-default {
+  padding: 12px 24px;
+  color: #ffffff;
+  border-radius: 50px;
+  border: none;
+  background-color: #f86f61;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
 }
 
 #faq {
@@ -156,7 +202,11 @@ footer p, footer a {
 }
 
 header {
-  height: 0px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
 }
 
 header .container-fluid {

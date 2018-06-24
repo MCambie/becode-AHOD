@@ -1,5 +1,10 @@
 header{
-    height: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $brand-color-white;
+    z-index: 1;
+
     .container-fluid {
         background-color: $brand-color-white;
     }
