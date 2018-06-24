@@ -1,2 +1,2 @@
-assets/css/*.css
-assets/css/*.map
+**/style*.css
+**/style*.map
