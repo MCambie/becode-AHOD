@@ -17,9 +17,12 @@ body{
     }
 }
 
-h1, h2, h3{
+h1, h2{
     color: $brand-color-blue;
     font-family: $font-heading;
+}
+h2{
+    font-weight: bold;
 }
 
 main {
