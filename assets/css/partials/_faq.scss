@@ -1,6 +1,15 @@
 #faq{
     margin-top: $space-between-section;
     position: relative;
+    .row{
+        margin-top: 40px;
+        margin-bottom: 50px;
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+    h2{
+        padding-left: 15px;
+    }
     .question{
         h3{ cursor: pointer; }
     
@@ -8,7 +17,6 @@
             height: 0;
             overflow: hidden;
         }
-
 
         .arrow{
             $arrow-size: 16px;
