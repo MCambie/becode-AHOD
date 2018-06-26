@@ -14,6 +14,19 @@ html{
     }
 }
 
+#about p, #news p{
+    text-align: justify;
+}
+#about i{
+    display: block;
+    margin: 0 auto;
+    transform: translateY(50%);
+}
+
+.content{
+    padding: 0 20px;
+}
+
 #faq{
     position: relative;
 }
@@ -34,17 +47,28 @@ html{
     height: auto;
     top: 50%;
     right: 0;
-    transform: translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    opacity: 0.5;
 }
 
 
 #contact label{
     display: block;
+    margin: 12px 0;
+}
+#contact label > input[type=text], #contact label > input[type=email]{
+    float: right;
+    width: 66%;
 }
 #contact p > label{
     display: inline-block;
+    cursor: pointer;
 }
 
+input[type=radio]{
+    margin: 0 12px;
+}
 input[type=submit]{
     width: 100%;
     color: white;
@@ -52,6 +76,11 @@ input[type=submit]{
 }
 textarea{
     width: 100%;
+    min-height: 150px;
+    resize: vertical;
+}
+#contact form{
+    margin-bottom: 12px;
 }
 
 main{
@@ -102,9 +131,12 @@ h2{
     color: white;
     text-align: center;
     font-size: 30px;
-    line-height: 50px;
+    line-height: 52px;
 }
 
+.container{
+    max-width: 1280px;
+}
 .new img {
     width: 100%;
 }
@@ -144,7 +176,13 @@ header .container-fluid{
   padding-right: 10px;
 }
 
-.page-footer{
-  background-color: #251979;
+footer{
+    background-color: #251979;
+}
+.page-footer p, .page-footer a{
   color:#FFFFFF;
+}
+
+.text-right{
+    text-align: right;
 }
