@@ -1,5 +1,7 @@
 #faq{
-    margin-top: $space-between-section;
+    // margin-top: $space-between-section;
+    position: relative;
+    top: -($space-between-section);
     position: relative;
     .row{
         margin-top: 40px;

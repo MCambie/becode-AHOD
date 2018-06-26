@@ -1,0 +1,16 @@
+.interstice{
+    position: relative;
+    width: 100%;
+    height: ($space-between-section * 2);
+    top: -($space-between-section * 0.5);
+    
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    
+    &.img_1{ background-image: url("/assets/img/photo_3_bluish.jpg"); }
+    &.img_2{ 
+        top: -($space-between-section * 1.5);
+        background-image: url("/assets/img/photo_1_bluish.jpg"); 
+    }
+}

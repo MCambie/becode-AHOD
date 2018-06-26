@@ -1,2 +1,4 @@
 **/style*.css
 **/style*.map
+**/node_modules
+package-lock.json
