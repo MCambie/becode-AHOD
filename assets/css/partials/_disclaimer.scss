@@ -1,0 +1,28 @@
+#disclaimer{
+    padding: 80px 0!important;
+    background-color: $brand-color-blue;
+    
+    p{
+        color: $brand-color-white;
+    }
+
+    a{
+        color: $brand-color-white;
+        border-bottom: 1px solid white;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+
+    .btn-default{
+        padding: 12px 24px;
+
+        color: $brand-color-white;
+
+        border-radius: 50px;
+        border: none;
+        background-color: $brand-color-orange;
+
+        box-shadow: 2px 4px 4px rgba($brand-color-black, 0.3);
+    }
+}

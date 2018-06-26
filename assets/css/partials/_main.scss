@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: $font-content;
+    color: $brand-color-black;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body{
+    background-color: $background-color;
+
+    @media screen and (min-width: 1281px) { // Pourquoi 1281px ?
+        font-size: 2em;
+    }
+}
+
+h1, h2{
+    color: $brand-color-blue;
+    font-family: $font-heading;
+}
+h2{
+    font-weight: bold;
+}
+
+main {
+    margin-top: 100px;
+}
+
+
+.bigger{
+    font-size: 2em;
+}
+
+.content {
+    padding: 0 20px;
+}
+
+.container {
+    max-width: 1160px;
+    &.bc-white{
+        background-color: $brand-color-white;
+    }
+}
+
+.center-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    color: $brand-color-blue;
+    font-weight: 600;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.space-after{
+    margin-bottom: 50px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.video{
+    &::before{
+        content: "→ ";
+        display: inline-block;
+        color: red;
+    }
+}
