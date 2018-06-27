@@ -13,6 +13,7 @@ $space-between-section: 200px;
 
 $smartphone-size: 840px;
 
+$pc: "screen and (min-width: "+ $smartphone-size + ")";
 $smartphone: "screen and (max-width: "+ $smartphone-size + ")";
 $smartphone-h: $smartphone + " and (orientation: landscape)";
 $smartphone-v: $smartphone + " and (orientation: portrait)";

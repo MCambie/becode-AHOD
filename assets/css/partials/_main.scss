@@ -20,6 +20,11 @@ body{
 h1, h2{
     color: $brand-color-blue;
     font-family: $font-heading;
+    a{
+        strong{
+            color: $brand-color-blue!important;
+        }
+    }
 }
 h2{
     font-weight: bold;
