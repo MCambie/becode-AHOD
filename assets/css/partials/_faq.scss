@@ -13,15 +13,29 @@
         padding-left: 15px;
     }
     .question{
-        h3{ cursor: pointer; }
+        h3{
+            width: fit-content;
+            position: relative;
+            cursor: pointer; 
+            transition: color 0.3s;
+            
+            &.opened{
+                color: $brand-color-orange;
+                font-weight: bold;
+
+                &>.arrow::after{
+                    border-color: transparent;
+                }
+            }
+        }
     
         p{
-            height: 0;
+            // height: 0;
             overflow: hidden;
         }
 
         .arrow{
-            $arrow-size: 16px;
+            $arrow-size: 14px;
             content: "";
             display: inline-block;
             width: 0;
@@ -29,19 +43,24 @@
             margin-left: 16px;
             
             border-top: $arrow-size solid $brand-color-orange;
-            border-left: ($arrow-size*0.7) solid transparent;
-            border-right: ($arrow-size*0.7) solid transparent;
+            border-left: ($arrow-size*0.5) solid transparent;
+            border-right: ($arrow-size*0.5) solid transparent;
             
-            // &::after{
-            //     content: "";
-            //     display: inline-block;
-            //     width: 0;
-            //     height: 0;
+            &::after{
+                content: "";
+                display: inline-block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: floor($arrow-size * 0.6);
+                right: ceil($arrow-size * 0.1);
 
-            //     border-top: ($arrow-size*0.7) solid $brand-color-blue;
-            //     border-left: ($arrow-size*0.5) solid transparent;
-            //     border-right: ($arrow-size*0.5) solid transparent;
-            // }
+                border-top: round($arrow-size*0.7) solid $brand-color-white;
+                border-left: round($arrow-size*0.35) solid transparent;
+                border-right: round($arrow-size*0.35) solid transparent;
+
+                transition: border-color 0.2s;
+            }
         }
     }
 }
