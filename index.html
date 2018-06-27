@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -11,28 +12,44 @@
     <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
-        <h1>
-            <strong>Repair Café</strong> Schaerbeek
-        </h1>
-        <nav class="text-uppercase">
-            <a href="#about">À propos</a>
-            <a href="#faq">FAQ</a>
-            <a href="#news">Actu</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <select name="lang" id="lang">
-            <option value="fr">fr</option>
-            <option value="en">en</option>
-            <option value="nl">nl</option>
-        </select>
+        <nav class="navbar navbar-default navbar-fixed-top text-uppercase">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <h1><a class="navbar-brand" href="#"><strong>Repair Café</strong> Schaerbeek</a></h1>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#about">À propos</a></li>
+                  <li><a href="#faq">Faq</a></li>
+                  <li><a href="#news">Actus</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Langue <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#about">Fr</a></li>
+                      <li><a href="#faq">Ndls</a></li>
+                      <li><a href="#">En</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!--/.nav-collapse -->
+            </div>
     </header>
     <main>
         <section id="disclaimer" class="container-fluid center-items">
             <div class="container">
                 <div class="row center-items">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <p class="text-uppercase bigger">Jeter? Pas question!</p>
                         <p class="bigger space-after">
                             Réparer ensemble, c'est l'idée des <a href="http://www.repairtogether.be/">Repair Cafés</a> dont l'entrée est ouverte à tous.
@@ -268,10 +285,64 @@
                 </div>
             </div>
         </div>
-    </footer>
-</div>
+        <div class="article">
+          <div class="preview">
+            <p>En septembre et octobre, ce ne sont pas moins de 95 objets qui ont été amenés au Repair Café Schaerbeek et comme toujours environ 70% d'entre eux repartent réparés [...]</p>
+            <img src="/assets/img/photo_2.jpg" alt="">
+          </div>
+          <div class="date">Publié le 26 avril 2018 à 09h08</div>
+          <h3>Initiation aux logiciels libres</h3>
+        </div>
+        <div class="article">
+          <div class="preview">
+            <p>En septembre et octobre, ce ne sont pas moins de 95 objets qui ont été amenés au Repair Café Schaerbeek et comme toujours environ 70% d'entre eux repartent réparés [...]</p>
+            <img src="/assets/img/photo_3.jpg" alt="">
+          </div>
+          <div class="date">Publié le 26 avril 2018 à 09h08</div>
+          <h3>Le printemps s'invite au Repair Café de Schaerbeek</h3>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div id="contact">
+      <form>
+        <span>Je souhaite :</span>
+        <label>
+                    <input type="radio" name="want-to-be">Être bénévole
+                </label>
+        <label>
+                    <input type="radio" name="want-to-be">Réparer un objet
+                </label>
+        <label for="lastname">Nom</label>
+        <input type="text" name="lastname">
+        <label for="lastname">Prénom</label>
+        <input type="text" name="firstname">
+        <label for="lastname">E-mail</label>
+        <input type="email" name="email">
+        <label for="date">Dates disponibles</label>
+        <select name="date">
+                    <option value="08-07-2018">8 juillet 2018</option>
+                </select>
+        <input type="submit" value="Inscription">
+      </form>
+    </div>
+    <div>
+      <p>
+        Si vous avez une question, peut-être trouverez-vous la réponse sur la page des <a href="#faq">FAQ</a>. Dans le cas contraire, vous pouvez nous contacter par e-mail:
+      </p>
+      <p>
+        <a href="mailto:repaircafe.schaerbeek@gmail.com">repaircafe.schaerbeek@gmail.com</a>
+      </p>
+      <img src="" alt="Repair Café logo">
+      <img src="" alt="Fondation Roi Baudouin">
+    </div>
+  </footer>
+  </div>
+  <!-- Script important pour le menu burger de bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
-<!-- Chargement de nos scripts en fin de page -->
-<script src="/assets/js/script.js"></script>
 </body>
+
 </html>

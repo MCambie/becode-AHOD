@@ -1,7 +1,49 @@
-.navbar-collapse {
-    background-color: $brand-color-blue;
-}
+// .navbar-collapse {
+//     background-color: $brand-color-blue;
+// }
 
-.nav.navbar-nav.navbar-right {
-    padding-right: 10px;
+// .nav.navbar-nav.navbar-right {
+//     padding-right: 10px;
+// }
+nav{
+    padding-bottom: 30px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+
+    &.navbar {
+        background-color: $brand-color-white;
+    }
+    
+    .navbar-brand {
+        color: $brand-color-blue !important;
+    }
+    
+    .navbar-default .navbar-toggle {
+        border: none;
+    }
+    
+    .icon-bar {
+        background-color: $brand-color-white;
+    }
+    
+    .navbar-default{
+        .navbar-toggle{
+            &:focus, &:hover{
+                background-color: $brand-color-white;
+            }
+            
+            .icon-bar{
+                background-color: $brand-color-black !important;
+            }
+        }
+        
+        .navbar-nav>li>a {
+            color: $brand-color-black;
+        }
+    }
+    
+    
+    &.navbar-nav.navbar-right a:hover {
+        color: $brand-color-orange;
+        text-decoration: underline;
+    }
 }
