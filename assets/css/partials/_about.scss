@@ -17,7 +17,7 @@
         padding-right: 7%;
     }
     
-    img{
+    iframe{
         margin-top: 50%;
     }
     
@@ -27,6 +27,7 @@
         text-decoration: none;
         &:hover{
             opacity: 0.5;
+            transition: opacity ease 0.2s;
         }
         &.video{
             display: inline-block;
@@ -38,6 +39,7 @@
             &:hover{
                 text-decoration: none;
                 opacity: 1;
+                transition: opacity ease 0.2s;
             }
         }
     }
