@@ -10,18 +10,33 @@ header.container-fluid {
 
 .navbar {
   background-color: white;
-  color: black !important;
 }
 
 .navbar-brand {
   color: #2b4fb2 !important;
 }
 
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black !important;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+  background-color: white;
+}
+
 .navbar-default .navbar-nav>li>a {
   color: black;
 }
 
-.nav-item a:hover {
-  color: #f86f61 !important;
+.nav.navbar-nav.navbar-right a:hover {
+  color: #f86f61;
   text-decoration: underline;
 }

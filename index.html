@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repair Café Schaerbeek</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Source+Sans+Pro">
   <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
   <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
@@ -17,41 +17,36 @@
 
 <body>
   <header>
-    <section class="menu container-fluid">
-      <nav class="navbar navbar-expand-lg justify-content-between fixed-top text-uppercase">
-        <a class="navbar-brand" href="#"><span class ="red"><strong>Repair Café</strong> Schaerbeek</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="#about">À propos <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="#faq">FAQ</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="#news">Actus</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link text-dark" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Langue
-                      </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                <a class="dropdown-item" href="#">FR</a>
-                <a class="dropdown-item" href="#">NDLS</a>
-                <a class="dropdown-item" href="#">EN</a>
-              </div>
+    <nav class="navbar navbar-default navbar-fixed-top text-uppercase">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><strong>Repair Café</strong> Schaerbeek</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#faq">Faq</a></li>
+            <li><a href="#news">Actus</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Langue <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#about">Fr</a></li>
+                <li><a href="#faq">Ndls</a></li>
+                <li><a href="#">En</a></li>
+              </ul>
             </li>
           </ul>
         </div>
-      </nav>
-    </section>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
   </header>
   <main>
     <section id="disclaimer" class="container-fluid center-items">
