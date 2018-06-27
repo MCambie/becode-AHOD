@@ -1,0 +1,27 @@
+header {
+  width: 100%;
+  height: auto;
+}
+
+header.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  background-color: white;
+  color: black !important;
+}
+
+.navbar-brand {
+  color: #2b4fb2 !important;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: black;
+}
+
+.nav-item a:hover {
+  color: #f86f61 !important;
+  text-decoration: underline;
+}

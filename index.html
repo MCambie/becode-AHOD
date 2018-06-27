@@ -7,49 +7,70 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Repair Café Schaerbeek</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik|Source+Sans+Pro">
   <!-- <link rel="stylesheet" href="./assets/css/bootstrap.css"> -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+  <link rel="stylesheet" href="./assets/css/marie.css">
 
 </head>
 
 <body>
   <header>
-    <h1>
-            <strong>Repair Café</strong> Schaerbeek
-        </h1>
-    <nav class="text-uppercase">
-      <a href="#about">À propos</a>
-      <a href="#faq">FAQ</a>
-      <a href="#news">Actu</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <select name="lang" id="lang">
-            <option value="fr">fr</option>
-            <option value="en">en</option>
-            <option value="nl">nl</option>
-        </select>
+    <section class="menu container-fluid">
+      <nav class="navbar navbar-expand-lg justify-content-between fixed-top text-uppercase">
+        <a class="navbar-brand" href="#"><span class ="red"><strong>Repair Café</strong> Schaerbeek</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="#about">À propos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="#news">Actus</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-dark" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Langue
+                      </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <a class="dropdown-item" href="#">FR</a>
+                <a class="dropdown-item" href="#">NDLS</a>
+                <a class="dropdown-item" href="#">EN</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
   </header>
   <main>
     <section id="disclaimer" class="container-fluid center-items">
-      <div class="container">
-        <div class="row center-items">
-          <div class="col-md-1"></div>
-          <div class="col-md-6">
-            <p class="text-uppercase bigger">Jeter? Pas question!</p>
-            <p class="bigger space-after">
-              Réparer ensemble, c'est l'idée des <a href="http://www.repairtogether.be/">Repair Cafés</a> dont l'entrée est ouverte à tous.
-            </p>
-            <p>
-              Prochaine session: Dimanche 8 juillet dés 14h<br> 307, rue des Coteaux 1030 Schaerbeek
-            </p>
-          </div>
-          <div class="col-md-4 center-items">
-            <button class="btn btn-default bigger">Inscrivez-vous</button>
-          </div>
-          <div class="col-md-1"></div>
+      <div class="row center-items">
+        <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-sm-6 col-md-6 col-lg-6 text-white">
+          <p class="text-uppercase bigger">Jeter? Pas question!</p>
+          <p class="bigger space-after">
+            Réparer ensemble, c'est l'idée des <a href="http://www.repairtogether.be/">Repair Cafés</a> dont l'entrée est ouverte à tous.
+          </p>
+          <p class="text-white">
+            Prochaine session: Dimanche 8 juillet dés 14h<br> 307, rue des Coteaux 1030 Schaerbeek
+          </p>
         </div>
+        <div class="col-sm-1 col-md-1 col-lg-1"></div>
+        <div class="col-sm-3 col-md-3 col-lg-3 ">
+          <button class="signUpbtn btn shadow">Inscrivez-vous</button>
+        </div>
+        <div class="col-sm-1 col-md-1 col-lg-1"></div>
       </div>
     </section>
     <section id="about" class="bc-white container">
@@ -184,7 +205,7 @@
     </section>
   </main>
   <footer>
-    <div>
+    <div id="contact">
       <form>
         <span>Je souhaite :</span>
         <label>
@@ -218,6 +239,9 @@
     </div>
   </footer>
   </div>
+  <!-- Script important pour le menu burger de bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
 </body>
 
