@@ -29,4 +29,11 @@
 
         box-shadow: 2px 4px 4px rgba($brand-color-black, 0.3);
     }
+    .row.center-items{
+        @include center-content;
+        @media #{$smartphone}{
+            max-width: 100vw;
+            flex-direction: column;
+        }
+    }
 }

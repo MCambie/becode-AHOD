@@ -3,3 +3,16 @@
     padding-left: $padding-default-value;
     padding-right: $padding-default-value;
 }
+
+@mixin center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin auto-padding{
+    @media #{$pc}{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
