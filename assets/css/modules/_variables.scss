@@ -10,3 +10,9 @@ $font-heading: 'Source Sans Pro', sans-serif;
 $max-width: 1160px;
 $padding-default-value: 96px;
 $space-between-section: 200px;
+
+$smartphone-size: 840px;
+
+$smartphone: "screen and (max-width: "+ $smartphone-size + ")";
+$smartphone-h: $smartphone + " and (orientation: landscape)";
+$smartphone-v: $smartphone + " and (orientation: portrait)";

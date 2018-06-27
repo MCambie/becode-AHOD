@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: ($space-between-section * 2);
-    top: -($space-between-section * 0.5);
+    top: -($space-between-section * 0.25);
     
     background-size: cover;
     background-position: center;
@@ -10,7 +10,7 @@
     
     &.img_1{ background-image: url("/assets/img/photo_3_bluish.jpg"); }
     &.img_2{ 
-        top: -($space-between-section * 1.5);
+        top: -($space-between-section * 0.75);
         background-image: url("/assets/img/photo_1_bluish.jpg"); 
     }
 }

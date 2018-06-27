@@ -27,6 +27,10 @@ h2{
 
 main {
     margin-top: 100px;
+
+    @media #{$smartphone-v}{
+        width: 100vw;
+    }
 }
 
 
