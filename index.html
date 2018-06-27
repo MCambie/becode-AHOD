@@ -33,7 +33,6 @@
         <section id="disclaimer" class="container-fluid center-items">
             <div class="container">
                 <div class="row center-items">
-                    <div class="col-md-1"></div>
                     <div class="col-md-6">
                         <p class="text-uppercase bigger">Jeter? Pas question!</p>
                         <p class="bigger space-after">
@@ -47,7 +46,6 @@
                     <div class="col-md-4 center-items">
                         <button class="btn btn-default bigger">Inscrivez-vous</button>
                     </div>
-                    <div class="col-md-1"></div>
                 </div>
             </div>
         </section>
@@ -193,6 +191,15 @@
                         <div class="date">Publié le 26 avril 2018 à 09h08</div>
                         <h3>Le printemps s'invite au Repair Café de Schaerbeek</h3>
                     </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -203,45 +210,63 @@
             <div class="col-md-5">
                 <form>
                     <span>Je souhaite :</span>
-                    <label>
-                        <input type="radio" name="want-to-be">Être bénévole
-                    </label>
-                    <label>
-                        <input type="radio" name="want-to-be">Réparer un objet
-                    </label>
-                    <label for="lastname">Nom</label>
-                    <input type="text" name="lastname">
-                    <label for="lastname">Prénom</label>
-                    <input type="text" name="firstname">
-                    <label for="lastname">E-mail</label>
-                    <input type="email" name="email">
-                    <label for="date">Dates disponibles</label>
-                    <select name="date">
-                        <option value="08-07-2018">8 juillet 2018</option>
-                    </select>
+                    <div class="wtb">
+                        <label>
+                            <input type="radio" name="want-to-be">Être bénévole
+                        </label>
+                        <label>
+                            <input type="radio" name="want-to-be">Réparer un objet
+                        </label>
+                    </div>
+                    <div class="data">
+                        <label for="lastname">Nom</label>
+                        <input type="text" name="lastname">
+                    </div>
+                    <div class="data">
+                        <label for="lastname">Prénom</label>
+                        <input type="text" name="firstname">
+                    </div>
+                    <div class="data">
+                        <label for="lastname">E-mail</label>
+                        <input type="email" name="email">
+                    </div>
+                        <label for="date"></label>
+                        <select name="date">
+                            <option value="0">Dates disponnibles</option>
+                            <option value="1">8 juillet 2018</option>
+                            <option value="2">12 août 2018</option>
+                        </select>
                     <input type="submit" value="Inscription" class="btn btn-default-1 smaller">
                 </form>
             </div>
             <div class="col-md-2"></div>
             <div class="col-md-5">
-                <p>
-                    Si vous avez une question, peut-être trouverez-vous la réponse sur la page des <a href="#faq">FAQ</a>.
-                    Dans le cas contraire, vous pouvez nous contacter par e-mail:
-                </p>
-                <p>
-                    <a href="mailto:repaircafe.schaerbeek@gmail.com">repaircafe.schaerbeek@gmail.com</a>
-                </p>
-                <p>
-                    Repair Café Schaerbeek
-                </p>
-                <p>    
-                    Ouvert tous les deuxièmes dimanches du mois, de 14h00 à 17h00.
-                </p>
-                <p> 
-                    307, rue des coteaux à 1030 Schaerbeek
-                </p>
-                <img src="assets/img/logo_repair_cafe.jpg" alt="Repair Café logo">
-                <img src="assets/img/logo_fondation_roi_baudouin.jpg" alt="Fondation Roi Baudouin">
+                <div class="contact">
+                    <div class="info">
+                        <p>
+                            Si vous avez une question, peut-être trouverez-vous la réponse sur la page des <a href="#faq">FAQ</a>.
+                            Dans le cas contraire, vous pouvez nous contacter par e-mail:
+                        </p>
+                        <p>
+                            <a href="mailto:repaircafe.schaerbeek@gmail.com">repaircafe.schaerbeek@gmail.com</a>
+                        </p>
+                    </div>
+                    <div class="pratic">
+                        <p>
+                            Repair Café Schaerbeek
+                        </p>
+                        <p>    
+                            Ouvert tous les deuxièmes dimanches du mois, de 14h00 à 17h00.
+                        </p>
+                        <p> 
+                            307, rue des coteaux à 1030 Schaerbeek
+                        </p>
+                    </div>
+                    <div class="logo">
+                        <img src="assets/img/logo_repair_cafe.jpg" alt="Repair Café logo">
+                        <img src="assets/img/logo_fondation_roi_baudouin.jpg" alt="Fondation Roi Baudouin">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
