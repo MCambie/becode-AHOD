@@ -1,4 +1,7 @@
 // Déclarer les variables globales ici
+// CONFIG //
+    const FAQ_PARAGRAPH_SPEED = 25;
+///////////
 
 window.onload = () =>{
     // Nos scripts ici
@@ -28,36 +31,33 @@ const toogleContent = (event) => { // Masque les paragraphes ouverts et affiche 
     else{
         element.classList.add("opened");
     }
-    
-    // let paragraph = element.parentNode.querySelector('p');
-    // const paragraphHeight = paragraph.style.height;
-
-    // let paragraphs = document.querySelectorAll(".question>p");
-    // for(let currentParagraph of paragraphs){
-    //     if(currentParagraph.style.height == "auto"){
-    //         currentParagraph.style.height = "0";
-    //     }
-    // }
-    
-    // if(paragraphHeight != "auto"){
-    //     paragraph.style.height = "auto";
-    // }
 };
 
 const update = ()=>{
+    //Gère le déroulement/enroulement des paragraphes de la FAQ
     let questions = document.querySelectorAll(".question");
     for(let question of questions){
         let questionHeader = question.querySelector('h3');
         let questionParagraph = question.querySelector('p');
+        let currentHeight = parseInt(questionParagraph.style.height.substring(0, questionParagraph.style.height.length - 2));
+        let dataHeight = questionParagraph.getAttribute("data-height");
 
-        if(questionHeader.classList.contains("opened")){
-            let currentHeight = parseInt(questionParagraph.style.height.substring(0, questionParagraph.style.height.length - 2));
-            if(currentHeight < questionParagraph.getAttribute("data-height")){
-                currentHeight += 10;
-                if(currentHeight > questionParagraph.getAttribute("data-height")){
-                    currentHeight = questionParagraph.getAttribute("data-height");
-                }
+        if(questionHeader.classList.contains("opened") && currentHeight < dataHeight){
+            currentHeight += FAQ_PARAGRAPH_SPEED;
+
+            if(currentHeight > questionParagraph.getAttribute("data-height")){
+                currentHeight = questionParagraph.getAttribute("data-height");
             }
+
+            questionParagraph.style.height = currentHeight + "px";
+        }
+        else if(!questionHeader.classList.contains("opened") && currentHeight > 0){
+            currentHeight -= FAQ_PARAGRAPH_SPEED;
+
+            if(currentHeight < 0){
+                currentHeight = 0;
+            }
+
             questionParagraph.style.height = currentHeight + "px";
         }
     }
