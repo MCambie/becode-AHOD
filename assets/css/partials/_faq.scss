@@ -1,8 +1,10 @@
-#faq{
+ #faq{
     // margin-top: $space-between-section;
     position: relative;
     top: -($space-between-section * 0.5);
     position: relative;
+    z-index: 1000;
+    box-shadow: 100vh 0px 0px -40px #f2f2f2, -100vh 0px 0px -40px #f2f2f2;
     .row{
         margin-top: 40px;
         margin-bottom: 50px;

@@ -15,6 +15,9 @@
         border-bottom: 1px solid white;
         &:hover{
             text-decoration: none;
+            color: $brand-color-orange;
+            border-bottom: 1px solid $brand-color-orange;
+            transition: all ease 0.5s;
         }
     }
 

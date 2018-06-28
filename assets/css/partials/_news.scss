@@ -3,6 +3,7 @@
     position: relative;
     top: -($space-between-section);
     color: $brand-color-blue;
+    box-shadow: 100vh 0px 0px -40px #f2f2f2, -100vh 0px 0px -40px #f2f2f2;
     .row{
         margin-top: 40px;
         margin-bottom: 50px;

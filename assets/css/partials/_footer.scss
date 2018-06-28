@@ -70,11 +70,16 @@ footer {
             margin-left: auto;
             margin-right: auto;
             padding: 12px 24px;
-            color: $brand-color-blue;
+            color: $brand-color-white;
             border-radius: 50px;
-            border: none;
-            background-color: $brand-color-white;
-            box-shadow: 2px 4px 4px rgba($brand-color-black, 0.3);
+            border: 1.5px solid $brand-color-white;
+            background-color: $brand-color-blue;
+            box-shadow: 2px 4px 4px rgba($brand-color-black, 0.1);
+            &:hover{
+                background-color: $brand-color-white;
+                color: $brand-color-blue;
+                transition: all ease 0.5s;
+            }
         }
     }
     #contact{

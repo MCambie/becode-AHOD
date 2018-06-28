@@ -83,3 +83,40 @@ main {
         color: red;
     }
 }
+
+.img_1{
+    img{
+        width: 100%;
+        position: fixed !important;
+        z-index: 100 !important;
+        top: 80px;
+    }
+}
+
+.img_2{
+    display: none;
+}
+
+@media screen and (max-width: 640px) {
+    .img_1{
+        display: none;
+    }
+    
+    .img_2{
+        display: block;
+        img{
+            width: 100%;
+            position: fixed !important;
+            top: 80px;
+        }
+    } 
+}
+
+// .img_2{
+//     img{
+//         width: 100%;
+//         position: fixed !important;
+//         z-index: 100 !important;
+//         top: 80px;
+//     }
+// }
