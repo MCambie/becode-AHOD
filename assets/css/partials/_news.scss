@@ -3,6 +3,8 @@
     position: relative;
     top: -($space-between-section);
     color: $brand-color-blue;
+    box-shadow: 100vh 0px 0px -40px #f2f2f2, -100vh 0px 0px -40px #f2f2f2;
+    top: 200px;
     .row{
         margin-top: 40px;
         margin-bottom: 50px;
@@ -25,6 +27,7 @@
                     background-color: rgba(237, 106, 86, 0.5);
                     p{
                         display:none;
+
                     }
                     &:hover{
                         p{
@@ -39,7 +42,6 @@
                             mix-blend-mode: screen;
                             -webkit-filter: grayscale(100%) contrast(100%);
                             filter: grayscale(100%) contrast(100%);
-                            opacity: 1;
                         }
                     }
                 }

@@ -15,19 +15,25 @@
         border-bottom: 1px solid white;
         &:hover{
             text-decoration: none;
+            color: $brand-color-orange;
+            border-bottom: 1px solid $brand-color-orange;
+            transition: all ease 0.5s;
         }
     }
 
     .btn-default{
         padding: 12px 24px;
-
         color: $brand-color-white;
-
         border-radius: 50px;
         border: none;
         background-color: $brand-color-orange;
-
         box-shadow: 2px 4px 4px rgba($brand-color-black, 0.3);
+        &:hover{
+            color: $brand-color-orange; 
+            background-color: $brand-color-white;
+            transition: color ease 0.5s;
+            transition: background-color ease 0.5s;
+        }
     }
     .row.center-items{
         @include center-content;
