@@ -1,9 +1,7 @@
  #faq{
-    // margin-top: $space-between-section;
+    @include box-border;
     position: relative;
-    top: -($space-between-section * 0.5);
-    z-index: 1000;
-    box-shadow: 100vh 0px 0px -40px #f2f2f2, -100vh 0px 0px -40px #f2f2f2;
+    margin-top: $space-between-section;
     
     .row{
         @include auto-padding;
@@ -20,6 +18,9 @@
             cursor: pointer; 
             transition: color 0.3s;
 
+            @media #{$smartphone-h}{
+                font-size: 1.2em;
+            }
             @media #{$smartphone-v}{
                 font-size: 1em;
                 margin: 0;
@@ -36,21 +37,19 @@
         }
     
         p{
-            // height: 0;
             overflow: hidden;
         }
 
         .arrow{
             $arrow-size: 14px;
-            content: "";
             display: inline-block;
             width: 0;
             height: 0;
             margin-left: 16px;
             
             border-top: $arrow-size solid $brand-color-orange;
-            border-left: ($arrow-size*0.5) solid transparent;
-            border-right: ($arrow-size*0.5) solid transparent;
+            border-left: round($arrow-size*0.5) solid transparent;
+            border-right: round($arrow-size*0.5) solid transparent;
             
             &::after{
                 content: "";
@@ -60,12 +59,16 @@
                 height: 0;
                 top: floor($arrow-size * 0.6);
                 right: ceil($arrow-size * 0.1);
-
+                
                 border-top: round($arrow-size*0.7) solid $brand-color-white;
                 border-left: round($arrow-size*0.35) solid transparent;
                 border-right: round($arrow-size*0.35) solid transparent;
-
+                
                 transition: border-color 0.2s;
+                
+                @media#{$smartphone}{
+                    top: 2px;
+                }
             }
         }
     }

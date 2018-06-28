@@ -2,8 +2,9 @@ footer {
     background-color: $brand-color-blue;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 160px;
-
+    // margin-top: 160px;
+    position: relative;
+    
     .row{
         padding-top: 100px;
         padding-bottom: 50px;

@@ -1,17 +1,20 @@
 // Déclarer les variables globales ici
 // CONFIG //
     const FAQ_PARAGRAPH_SPEED = 25;
+    const SCROLL_DURATION = 500;
 ///////////
 
+let $root = $('html, body');
+let questions;
+
 window.onload = () =>{
-    // Nos scripts ici
+    questions = document.querySelectorAll(".question");
     loadQuestion();
     setInterval(update, 33);
 };
 
 
 const loadQuestion = ()=>{ // Charge chaque questions de la FAQ et leur assigne un event click pour faire apparaitre leur contenu
-    let questions = document.querySelectorAll(".question");
     for(let question of questions){
         let questionHeader = question.querySelector("h3");
         questionHeader.addEventListener('click', toogleContent);
@@ -23,13 +26,21 @@ const loadQuestion = ()=>{ // Charge chaque questions de la FAQ et leur assigne 
 
 const toogleContent = (event) => { // Masque les paragraphes ouverts et affiche le paragraph demandé
     let element = event.target;
-    
-    // Ajoute ou supprime la class 'opened' au titre
     if(element.classList.contains("opened")){
         element.classList.remove("opened");
     }
     else{
+        closeAllQuestion();
         element.classList.add("opened");
+    }
+};
+
+const closeAllQuestion = ()=>{
+    for(let question of questions){
+        let questionHeader = question.querySelector("h3");
+        if(questionHeader.classList.contains("opened")){
+            questionHeader.classList.remove("opened");
+        }
     }
 };
 
@@ -63,9 +74,6 @@ const update = ()=>{
     }
 };
 
-
-let $root = $('html, body');
-
 $('a[href^="#"]').click(function(){
     let href = $.attr(this, 'href');
 
@@ -73,7 +81,7 @@ $('a[href^="#"]').click(function(){
         {
             scrollTop: $(href).offset().top
         }, 
-        500,
+        SCROLL_DURATION,
         ()=>{
             window.location.hash = href;
         }
