@@ -6,6 +6,7 @@
     
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     z-index: -1;
     
     &.img_1{ background-image: url("/assets/img/photo_3_bluish.jpg"); }
