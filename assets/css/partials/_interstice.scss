@@ -12,8 +12,10 @@
 
     &.img_1{ 
         background-image: url("../img/photo_3_bluish.jpg"); 
+        transform: translateY(0%);
     }
     &.img_2{ 
         background-image: url("../img/photo_1_bluish.jpg");
+        transform: translateY(0%);
     }
 }
