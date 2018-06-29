@@ -18,6 +18,10 @@
             border-bottom: 1px solid $brand-color-orange;
             transition: all ease 0.5s;
         }
+
+        &[href="#form"]{
+            border: none;
+        }
     }
 
     .btn-default{
