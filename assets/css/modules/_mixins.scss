@@ -3,3 +3,22 @@
     padding-left: $padding-default-value;
     padding-right: $padding-default-value;
 }
+
+@mixin center-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin auto-padding{
+    @media #{$pc}{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+}
+
+@mixin box-border{
+    // box-shadow: 
+    //     100vh -20px 0px -20px #f2f2f2, 
+    //     -100vh -20px 0px -20px #f2f2f2;
+}

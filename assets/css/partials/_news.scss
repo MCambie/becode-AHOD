@@ -1,10 +1,10 @@
 #news{
-    // margin-top: $space-between-section;
+    @include box-border;
     position: relative;
-    top: -($space-between-section);
+    margin-top: ($space-between-section * 0.8);
+    top: ($space-between-section * 0.2);
     color: $brand-color-blue;
-    box-shadow: 100vh 0px 0px -40px #f2f2f2, -100vh 0px 0px -40px #f2f2f2;
-    top: 200px;
+    
     .row{
         margin-top: 40px;
         margin-bottom: 50px;
@@ -23,6 +23,11 @@
                 padding: 0px;
                 padding-right: 30px;
                 margin-bottom: 40px;
+
+                @media #{$smartphone-v}{
+                    padding: 0px 15px;
+                }
+
                 .preview{
                     background-color: rgba(237, 106, 86, 0.5);
                     p{

@@ -63,12 +63,18 @@ header>nav{
             top: auto;
         }
 
-        li > a{
-            color: $brand-color-black!important;
-            
-            &:hover {
-                color: $brand-color-orange!important;
-                transition: color ease 0.2s;
+        li{
+            @media #{$smartphone}{
+                background-color: $background-color;
+            }
+
+            & > a{
+                color: $brand-color-black!important;
+                
+                &:hover {
+                    color: $brand-color-orange!important;
+                    transition: color ease 0.2s;
+                } 
             }
         }
     }

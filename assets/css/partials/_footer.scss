@@ -2,23 +2,32 @@ footer {
     background-color: $brand-color-blue;
     padding-left: 5%;
     padding-right: 5%;
-    margin-top: 160px;
-
+    // margin-top: 160px;
+    position: relative;
+    
     .row{
         padding-top: 100px;
         padding-bottom: 50px;
-    }form{
+    }
+
+    form{
         display: flex;
         flex-direction: column;
         color: $brand-color-white;
         margin-right: 10%;
         margin-left: 10%;
+
+        #date{
+           float: right;
+        }
+
         span{
             color: $brand-color-white;
             text-align: center;
             font-size: 25px;
             font-family: $font-heading;
-        }.wtb{
+        }
+        .wtb{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -28,8 +37,9 @@ footer {
             margin-top: 15px;
             input[type="radio"]{
                 margin: 0 10px 0 10px;
-              }
-        }.data{
+            }
+        }
+        .data{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -44,13 +54,15 @@ footer {
         label{
             color: $brand-color-white;
             margin-top: 30px;
-        }input{
+        }
+        input{
             background-color: $brand-color-blue;
             border: none;
             margin-top: 28px;
             font-size: 14px;
             color: $brand-color-white;
-        }select{
+        }
+        select{
             background-color: $brand-color-blue;
             margin-top: 0px;
             border: none;
@@ -88,9 +100,11 @@ footer {
         margin-right: 10%;
         p, a {
         color: $brand-color-white;
-        }.info{
+        }
+        .info{
             font-size: 14px;
-        }.pratic{
+        }
+        .pratic{
             margin-top: 40px;
             margin-bottom: 40px;
             font-size: 18px;
