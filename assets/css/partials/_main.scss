@@ -3,6 +3,7 @@
     padding: 0;
     font-family: $font-content;
     color: $brand-color-black;
+    font-size: 16px;
 }
 
 html {
@@ -84,4 +85,13 @@ section{
         display: inline-block;
         color: red;
     }
+}
+
+img {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+  
+img[data-src] {
+    opacity: 0;
 }
