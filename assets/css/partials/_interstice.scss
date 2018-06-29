@@ -1,12 +1,11 @@
 .interstice{
     position: absolute;
     transform: translateY(0%);
-    // top: -20px;
-
+    
     width: 100%;
     height: ($space-between-section * 1.2);
 
-    background-position: center 100%;
+    background-position: center;
     background-attachment: fixed;
     background-size: cover;
     z-index: -1;
