@@ -37,7 +37,37 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["README.md","de6af67d59f866ef00f9dba3c477c407"],["assets/css/style.min.css","44235ba0403a99b68a4043c996087220"],["assets/css/vendors/bootstrap-grid.css","5ab32241c472addf14a92d74134eaf1e"],["assets/css/vendors/bootstrap-grid.min.css","e892a92ad5a2e8e5ebc5c2a07f74ee3b"]],["assets/css/vendors/bootstrap-reboot.css","bed792ba52e4aed59a5804afbd0d3621"],["assets/css/vendors/bootstrap-reboot.css.map","196fde56f0710e83886b21f5c7ee389e"],["assets/css/vendors/bootstrap-reboot.min.css","2283ad1f0381dbe695fb5f7406d254af"],["assets/css/vendors/bootstrap-reboot.min.css.map","dd0692f26351a6c9ef99e9b342a7da6b"],["assets/css/vendors/bootstrap.css","609508fcdcdb45f59b77da33b405edbc"],["assets/css/vendors/bootstrap.css.map","7f22dc40aa22dc514eaf73c8d619e8bd"],["assets/css/vendors/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["assets/css/vendors/bootstrap.min.css.map","ea6c3c97d126f9996d7cc206f2df625b"],["assets/img/logo_fondation_roi_baudouin.jpg","f1f43961388618f1f19ebfbf40c0a9a6"],["assets/img/logo_repair_cafe.jpg","8069044721af48a8ad3bce9fe70da1cf"],["assets/img/photo_1.jpg","fdd6fb020835b2ff2820fff92951091c"],["assets/img/photo_1_bluish.jpg","c6fe330bb7f85d9376e7e8e3eab49ef9"],["assets/img/photo_2.jpg","5b65bb4a0c8f0b86f2ce337d00c6c519"],["assets/img/photo_2_bluish.jpg","ac8a2b3e4ed52481b356a74ffa60379d"],["assets/img/photo_3.jpg","b73288d36f87339dc05719cc8b484adb"],["assets/img/photo_3_bluish.jpg","4df0240d3533cc35196395974d113455"],["assets/img/video_preview.png","66d01601f974a26ffae0c7ab41811c1a"],["assets/js/script.js","1610a870e9bfe419cd4e487e47d64623"],["favicon.ico","3fe7c991cce4210a2ac2bdfe7d8f10e8"],["index.html","2f2a2570662b6dbb7122106f64007a5c"],["mk-rc-desktop-c.pdf","a23ecb62aa0e92c742fef7778ebe69d5"],["mk-rc-mobile-c.pdf","5263c7491985003d1463de93ab15b285"],["rsc/mk-rc-charte.pdf","ca8f2dc44b0a4a89f3b3dc291233873c"],["rsc/mk-rc-desktop-c2.pdf","a9f0c570bd0647314317f78a1c0ccd21"],["rsc/mk-rc-mobile-c2.pdf","5263c7491985003d1463de93ab15b285"]];
+var precacheConfig = [
+["README.md","de6af67d59f866ef00f9dba3c477c407"],
+["assets/css/style.min.css","44235ba0403a99b68a4043c996087220"],
+["assets/css/vendors/bootstrap-grid.css","5ab32241c472addf14a92d74134eaf1e"],
+["assets/css/vendors/bootstrap-grid.min.css","e892a92ad5a2e8e5ebc5c2a07f74ee3b"],
+["assets/css/vendors/bootstrap-reboot.css","bed792ba52e4aed59a5804afbd0d3621"],
+["assets/css/vendors/bootstrap-reboot.css.map","196fde56f0710e83886b21f5c7ee389e"],
+["assets/css/vendors/bootstrap-reboot.min.css","2283ad1f0381dbe695fb5f7406d254af"],
+["assets/css/vendors/bootstrap-reboot.min.css.map","dd0692f26351a6c9ef99e9b342a7da6b"],
+["assets/css/vendors/bootstrap.css","609508fcdcdb45f59b77da33b405edbc"],
+["assets/css/vendors/bootstrap.css.map","7f22dc40aa22dc514eaf73c8d619e8bd"],
+["assets/css/vendors/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],
+["assets/css/vendors/bootstrap.min.css.map","ea6c3c97d126f9996d7cc206f2df625b"],
+["assets/img/logo_fondation_roi_baudouin.jpg","f1f43961388618f1f19ebfbf40c0a9a6"],
+["assets/img/logo_repair_cafe.jpg","8069044721af48a8ad3bce9fe70da1cf"],
+["assets/img/photo_1.jpg","fdd6fb020835b2ff2820fff92951091c"],
+["assets/img/photo_1_bluish.jpg","c6fe330bb7f85d9376e7e8e3eab49ef9"],
+["assets/img/photo_2.jpg","5b65bb4a0c8f0b86f2ce337d00c6c519"],
+["assets/img/photo_2_bluish.jpg","ac8a2b3e4ed52481b356a74ffa60379d"],
+["assets/img/photo_3.jpg","b73288d36f87339dc05719cc8b484adb"],
+["assets/img/photo_3_bluish.jpg","4df0240d3533cc35196395974d113455"],
+["assets/img/video_preview.png","66d01601f974a26ffae0c7ab41811c1a"],
+["assets/js/script.js","1610a870e9bfe419cd4e487e47d64623"],
+["favicon.ico","3fe7c991cce4210a2ac2bdfe7d8f10e8"],
+["index.html","2f2a2570662b6dbb7122106f64007a5c"],
+["mk-rc-desktop-c.pdf","a23ecb62aa0e92c742fef7778ebe69d5"],
+["mk-rc-mobile-c.pdf","5263c7491985003d1463de93ab15b285"],
+["rsc/mk-rc-charte.pdf","ca8f2dc44b0a4a89f3b3dc291233873c"],
+["rsc/mk-rc-desktop-c2.pdf","a9f0c570bd0647314317f78a1c0ccd21"],
+["rsc/mk-rc-mobile-c2.pdf","5263c7491985003d1463de93ab15b285"]
+];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
