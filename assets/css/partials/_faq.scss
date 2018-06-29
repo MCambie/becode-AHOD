@@ -73,5 +73,9 @@
         }
     }
 }
-  
-  
+
+@media screen and (max-width: 640px) {
+    #faq .question .arrow::after {
+        border-top: 0px;
+    }    
+}

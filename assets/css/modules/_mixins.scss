@@ -18,7 +18,14 @@
 }
 
 @mixin box-border{
-    // box-shadow: 
-    //     100vh -20px 0px -20px #f2f2f2, 
-    //     -100vh -20px 0px -20px #f2f2f2;
+    box-shadow: 
+        100vh -20px 0px -80px #f2f2f2, 
+        -100vh -20px 0px -80px #f2f2f2;
 }
+
+
+// @mixin box-border{
+//     box-shadow: 
+//         100vh -20px 0px -20px #f2f2f2, 
+//         -100vh -20px 0px -20px #f2f2f2;
+// }

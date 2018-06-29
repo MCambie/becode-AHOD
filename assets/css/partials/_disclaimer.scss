@@ -1,7 +1,6 @@
 #disclaimer{
     padding: 80px 0!important;
     background-color: $brand-color-blue;
-
     .row{
         padding: 0 7%;
     }
@@ -40,6 +39,19 @@
         @media #{$smartphone}{
             max-width: 100vw;
             flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #disclaimer{
+        padding: 50px 0!important;
+        text-align: center;
+        p.space-after{
+            font-size: 20px;
+            padding-top: 20px;
+        }p.infoline{
+            display: none;
         }
     }
 }

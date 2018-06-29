@@ -118,3 +118,22 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 640px) {
+    footer{
+        .row{
+            padding-top: 120px;
+        }
+        form{
+            margin-right: 0% !important;
+            margin-left: 0% !important; 
+            .wtb{
+                width: 100%;
+            }
+        }#contact {
+            margin-top: 40px;
+            margin-right: 0%;
+            text-align: center;
+        }    
+    }
+}
