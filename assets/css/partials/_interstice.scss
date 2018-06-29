@@ -1,13 +1,13 @@
 .interstice{
     position: absolute;
-    transform: translateY(-10%);
+    transform: translateY(0%);
     
     width: 100%;
     height: ($space-between-section * 1.2);
 
     background-position: center;
     background-attachment: fixed;
-    background-size: auto 120vh;
+    background-size: cover;
     z-index: -1;
 
     &.img_1{ 
