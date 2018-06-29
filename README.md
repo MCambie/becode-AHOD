@@ -32,11 +32,10 @@ Suite à ce premier rendu, nous avons eu trois semaines pour l'améliorer.
 
 #### Test lighthouse
 
-![lighthouse](lighthouse.png)
+![lighthouse](lighthouse.PNG)
 
 #### Test W3C
 
-![w3](w3.png)
 
 #### Le Mockup
 
