@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["README.md","de6af67d59f866ef00f9dba3c477c407"],["assets/css/modules/_mixins.scss","b3dc753c14a093a3c5499c07bc65d48e"],["assets/css/modules/_variables.scss","c2d47a3c960d5e7c8f5ff75558eec7eb"],["assets/css/old_style.css","a6db820605371872adfc42d4910a9304"],["assets/css/partials/_about.scss","02d3592937da678c441d00a0deaffc3d"],["assets/css/partials/_all.scss","1ea3cd235b9f2629e3a92e219c72361e"],["assets/css/partials/_contact.scss","3ebfed3ea82bb9e00b5a49142bf80d5b"],["assets/css/partials/_disclaimer.scss","08cbe34a210b5394b2a71e6141e8ef8b"],["assets/css/partials/_faq.scss","238f09e9daae9cf3b67eab4540e334e6"],["assets/css/partials/_footer.scss","f440ec092154ef6abeabdf292e8980a6"],["assets/css/partials/_header.scss","025a324da1c7b60de357d2b7ce66ae22"],["assets/css/partials/_interstice.scss","9baaa794a34d8bbddc1ba9b70c89b654"],["assets/css/partials/_main.scss","c43af3265a0ed9602b78bb504455d16e"],["assets/css/partials/_navbar.scss","192da0e1eadeb4d80b6ed857b9350db4"],["assets/css/partials/_news.scss","289077a6ada070b3dd54a2fa07df6542"],["assets/css/partials/_show.scss","2f385af2441122c48a85122efa1f9ad7"],["assets/css/style.css","6de752368fae1d97cf3909ee43953e95"],["assets/css/style.css.map","fafd27b15da79279c3d478bdefea6ed2"],["assets/css/style.min.css","393ef375efb9b3ebc68ae31699cf0416"],["assets/css/style.min.css.map","a4d759676ffbe61035f6942578d98dea"],["assets/css/style.scss","3e9b005b0a0c1370f9dbcb93cb631dbf"],["assets/css/vendors/bootstrap-grid.css","5ab32241c472addf14a92d74134eaf1e"],["assets/css/vendors/bootstrap-grid.css.map","622b296beb2afca293e90ab5ba6db14f"],["assets/css/vendors/bootstrap-grid.min.css","e892a92ad5a2e8e5ebc5c2a07f74ee3b"],["assets/css/vendors/bootstrap-grid.min.css.map","a79533cec9980bfa1d99928dd3a81d53"],["assets/css/vendors/bootstrap-reboot.css","bed792ba52e4aed59a5804afbd0d3621"],["assets/css/vendors/bootstrap-reboot.css.map","196fde56f0710e83886b21f5c7ee389e"],["assets/css/vendors/bootstrap-reboot.min.css","2283ad1f0381dbe695fb5f7406d254af"],["assets/css/vendors/bootstrap-reboot.min.css.map","dd0692f26351a6c9ef99e9b342a7da6b"],["assets/css/vendors/bootstrap.css","609508fcdcdb45f59b77da33b405edbc"],["assets/css/vendors/bootstrap.css.map","7f22dc40aa22dc514eaf73c8d619e8bd"],["assets/css/vendors/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["assets/css/vendors/bootstrap.min.css.map","ea6c3c97d126f9996d7cc206f2df625b"],["assets/img/logo_fondation_roi_baudouin.jpg","f1f43961388618f1f19ebfbf40c0a9a6"],["assets/img/logo_repair_cafe.jpg","8069044721af48a8ad3bce9fe70da1cf"],["assets/img/photo_1.jpg","fdd6fb020835b2ff2820fff92951091c"],["assets/img/photo_1_bluish.jpg","c6fe330bb7f85d9376e7e8e3eab49ef9"],["assets/img/photo_2.jpg","5b65bb4a0c8f0b86f2ce337d00c6c519"],["assets/img/photo_2_bluish.jpg","ac8a2b3e4ed52481b356a74ffa60379d"],["assets/img/photo_3.jpg","b73288d36f87339dc05719cc8b484adb"],["assets/img/photo_3_bluish.jpg","4df0240d3533cc35196395974d113455"],["assets/img/video_preview.png","66d01601f974a26ffae0c7ab41811c1a"],["assets/js/script.js","1610a870e9bfe419cd4e487e47d64623"],["favicon.ico","3fe7c991cce4210a2ac2bdfe7d8f10e8"],["index.html","2f2a2570662b6dbb7122106f64007a5c"],["mk-rc-desktop-c.pdf","a23ecb62aa0e92c742fef7778ebe69d5"],["mk-rc-mobile-c.pdf","5263c7491985003d1463de93ab15b285"],["rsc/mk-rc-charte.pdf","ca8f2dc44b0a4a89f3b3dc291233873c"],["rsc/mk-rc-desktop-c2.pdf","a9f0c570bd0647314317f78a1c0ccd21"],["rsc/mk-rc-mobile-c2.pdf","5263c7491985003d1463de93ab15b285"]];
+var precacheConfig = [["README.md","de6af67d59f866ef00f9dba3c477c407"],["assets/css/modules/_all.scss","5aa40b1944307c3b20ba0b319e56e66f"],["assets/css/modules/_mixins.scss","b3dc753c14a093a3c5499c07bc65d48e"],["assets/css/modules/_variables.scss","c2d47a3c960d5e7c8f5ff75558eec7eb"],["assets/css/old_style.css","a6db820605371872adfc42d4910a9304"],["assets/css/partials/_about.scss","02d3592937da678c441d00a0deaffc3d"],["assets/css/partials/_all.scss","1ea3cd235b9f2629e3a92e219c72361e"],["assets/css/partials/_contact.scss","3ebfed3ea82bb9e00b5a49142bf80d5b"],["assets/css/partials/_disclaimer.scss","08cbe34a210b5394b2a71e6141e8ef8b"],["assets/css/partials/_faq.scss","238f09e9daae9cf3b67eab4540e334e6"],["assets/css/partials/_footer.scss","f440ec092154ef6abeabdf292e8980a6"],["assets/css/partials/_header.scss","025a324da1c7b60de357d2b7ce66ae22"],["assets/css/partials/_interstice.scss","5c5b8869c33e4273a27ad19cad4bde6a"],["assets/css/partials/_main.scss","ec3084b63f371c7254588f62f51a3b80"],["assets/css/partials/_navbar.scss","192da0e1eadeb4d80b6ed857b9350db4"],["assets/css/partials/_news.scss","289077a6ada070b3dd54a2fa07df6542"],["assets/css/partials/_show.scss","2f385af2441122c48a85122efa1f9ad7"],["assets/css/style.css","ff1ddd1ab12f5493b66cc0b5b182e471"],["assets/css/style.css.map","3907eec7f9e0d32e12de2416a72293d0"],["assets/css/style.min.css","44235ba0403a99b68a4043c996087220"],["assets/css/style.min.css.map","794014f5fd39451e867470bc89a407ba"],["assets/css/style.scss","3e9b005b0a0c1370f9dbcb93cb631dbf"],["assets/css/vendors/bootstrap-grid.css","5ab32241c472addf14a92d74134eaf1e"],["assets/css/vendors/bootstrap-grid.css.map","622b296beb2afca293e90ab5ba6db14f"],["assets/css/vendors/bootstrap-grid.min.css","e892a92ad5a2e8e5ebc5c2a07f74ee3b"],["assets/css/vendors/bootstrap-grid.min.css.map","a79533cec9980bfa1d99928dd3a81d53"],["assets/css/vendors/bootstrap-reboot.css","bed792ba52e4aed59a5804afbd0d3621"],["assets/css/vendors/bootstrap-reboot.css.map","196fde56f0710e83886b21f5c7ee389e"],["assets/css/vendors/bootstrap-reboot.min.css","2283ad1f0381dbe695fb5f7406d254af"],["assets/css/vendors/bootstrap-reboot.min.css.map","dd0692f26351a6c9ef99e9b342a7da6b"],["assets/css/vendors/bootstrap.css","609508fcdcdb45f59b77da33b405edbc"],["assets/css/vendors/bootstrap.css.map","7f22dc40aa22dc514eaf73c8d619e8bd"],["assets/css/vendors/bootstrap.min.css","e59aa29ac4a3d18d092f6ba813ae1997"],["assets/css/vendors/bootstrap.min.css.map","ea6c3c97d126f9996d7cc206f2df625b"],["assets/img/logo_fondation_roi_baudouin.jpg","f1f43961388618f1f19ebfbf40c0a9a6"],["assets/img/logo_repair_cafe.jpg","8069044721af48a8ad3bce9fe70da1cf"],["assets/img/photo_1.jpg","fdd6fb020835b2ff2820fff92951091c"],["assets/img/photo_1_bluish.jpg","c6fe330bb7f85d9376e7e8e3eab49ef9"],["assets/img/photo_2.jpg","5b65bb4a0c8f0b86f2ce337d00c6c519"],["assets/img/photo_2_bluish.jpg","ac8a2b3e4ed52481b356a74ffa60379d"],["assets/img/photo_3.jpg","b73288d36f87339dc05719cc8b484adb"],["assets/img/photo_3_bluish.jpg","4df0240d3533cc35196395974d113455"],["assets/img/video_preview.png","66d01601f974a26ffae0c7ab41811c1a"],["assets/js/script.js","1610a870e9bfe419cd4e487e47d64623"],["favicon.ico","3fe7c991cce4210a2ac2bdfe7d8f10e8"],["index.html","2f2a2570662b6dbb7122106f64007a5c"],["mk-rc-desktop-c.pdf","a23ecb62aa0e92c742fef7778ebe69d5"],["mk-rc-mobile-c.pdf","5263c7491985003d1463de93ab15b285"],["rsc/mk-rc-charte.pdf","ca8f2dc44b0a4a89f3b3dc291233873c"],["rsc/mk-rc-desktop-c2.pdf","a9f0c570bd0647314317f78a1c0ccd21"],["rsc/mk-rc-mobile-c2.pdf","5263c7491985003d1463de93ab15b285"]];
 var cacheName = 'sw-precache-v3-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
@@ -176,10 +176,10 @@ self.addEventListener('install', function(event) {
         );
       });
     }).then(function() {
-
+      
       // Force the SW to transition from installing -> active state
       return self.skipWaiting();
-
+      
     })
   );
 });
@@ -199,9 +199,9 @@ self.addEventListener('activate', function(event) {
         );
       });
     }).then(function() {
-
+      
       return self.clients.claim();
-
+      
     })
   );
 });
@@ -259,3 +259,10 @@ self.addEventListener('fetch', function(event) {
     }
   }
 });
+
+
+
+
+
+
+
